@@ -6,6 +6,6 @@ duty_cycle=0
 led = PWM(Pin(2),freq=frequency,duty=duty_cycle)
 while True:
     for i in range(1023):
-        led.duty(i)#value只能用0，1，duty是0~1023
-        sleep(0.01)
+        led.duty(i)#value只能用0，1，duty是0~1023，duty零是最大值
+        sleep(0.001)
         
