@@ -13,7 +13,7 @@ def on_message(topic, msg):
 
 
 #########################宣告與設定#########################
-wi = mcu.wifi
+wi = mcu.wifi()
 wi.setup(ap_active=False, sta_active=True)
 if wi.connect("Singular_AI", "Singular#1234"):
     print(f"IP={wi.ip}")
